@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /*
 Given an integer array arr, count element x such that x + 1 is also in arr.
 
@@ -19,4 +21,9 @@ func countElements(arr []int) (cnt int) {
 	}
 
 	return
+}
+
+func main() {
+	arr := []int{1, 2, 3}
+	fmt.Printf("count elements: %v", countElements(arr))
 }
